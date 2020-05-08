@@ -51,7 +51,7 @@ function Bot()
   if(this.endTime < this.startTime)
     throw new Error("Start time must be less than the end time!")
   this.dataPoints = points || []
-  this.stopLoss = stopLoss || 0.4
+  this.stopLoss = stopLoss || 2
   this.majorCurrency = this.currency.split("_")[0]
   this.minorCurrency = this.currency.split("_")[1]
   this.prices = []
